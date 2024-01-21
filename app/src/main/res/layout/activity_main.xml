@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topTVGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomGuideline" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip5"
+        app:layout_constraintEnd_toStartOf="@+id/flip2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topTVGuideline" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip6"
+        app:layout_constraintEnd_toStartOf="@+id/flip3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip1"
+        app:layout_constraintTop_toTopOf="@+id/topTVGuideline" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip7"
+        app:layout_constraintEnd_toStartOf="@+id/flip4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip2"
+        app:layout_constraintTop_toTopOf="@+id/topTVGuideline" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip3"
+        app:layout_constraintTop_toTopOf="@+id/topTVGuideline" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip9"
+        app:layout_constraintEnd_toStartOf="@+id/flip6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flip1" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip11"
+        app:layout_constraintEnd_toStartOf="@+id/flip8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip6"
+        app:layout_constraintTop_toBottomOf="@+id/flip3" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip7"
+        app:layout_constraintTop_toBottomOf="@+id/flip4" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip10"
+        app:layout_constraintEnd_toStartOf="@+id/flip7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip5"
+        app:layout_constraintTop_toBottomOf="@+id/flip2" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip13"
+        app:layout_constraintEnd_toStartOf="@+id/flip10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flip5" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip15"
+        app:layout_constraintEnd_toStartOf="@+id/flip12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip10"
+        app:layout_constraintTop_toBottomOf="@+id/flip7" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip11"
+        app:layout_constraintTop_toBottomOf="@+id/flip8" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/flip14"
+        app:layout_constraintEnd_toStartOf="@+id/flip11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip9"
+        app:layout_constraintTop_toBottomOf="@+id/flip6" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/flip14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flip9" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/flip16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip14"
+        app:layout_constraintTop_toBottomOf="@+id/flip11" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip16"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip15"
+        app:layout_constraintTop_toBottomOf="@+id/flip12" />
+
+    <com.lakedev.gamefindthepair.FlipCardView
+        android:id="@+id/flip14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pngegg"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/flip15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flip13"
+        app:layout_constraintTop_toBottomOf="@+id/flip10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
